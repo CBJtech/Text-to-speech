@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+     background-color: #FEF9E6;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+.entireDocument{
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0.3rem;
+    box-shadow: 4px 4px 30px rgb(0.4, 0.4, 0.4, 0.4);
+    
+    margin: 0.5rem 0.5rem;
+    animation-name: move;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-duration: 6s;
+}
+@keyframes move{
+    from{
+        opacity: 0;
+        margin-top: -370px;
+    }
+    To{
+        opacity: 1;
+    }
+}
+
+.text-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    border-color: green;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #00ff22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+button:hover {
+    background-color: crimson;
+    scale: 1.1;
+}
+audio{
+    width: 80%;
+    background-color: lightgreen;
+}
+footer{
+    margin-top: 3rem;
+}
+.audio-container {
+    margin-top: 20px;
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+@media screen and(max-width: 768px) {
+    .audio-container{
+    width: 80%;
+   } 
+   .text-input{
+    width: 90%;
+   }
+   textarea{
+    width: 70%;
+   }
+   .text-input{
+    width: 80%;
+   }
+}
+@media screen and (min-width: 768px) {
+    audio{
+        width: 20rem;
+    }
+}
